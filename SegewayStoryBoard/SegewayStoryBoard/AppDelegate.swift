@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Assignment4
+//  SegewayStoryBoard
 //
-//  Created by SubaruShiozaki on 2019-04-24.
+//  Created by SubaruShiozaki on 2019-04-25.
 //  Copyright © 2019 Kazuya Takahashi. All rights reserved.
 //
 
@@ -15,38 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        
-        let vancouver = City(name: "Vancouver", country: "Canada", temp: 15.5, icon: "canada", summary: "Sunny")
-        let tokyo = City(name: "Tokyo", country: "Japan", temp: 23, icon: "japan", summary: "Hot")
-        let sao = City(name: "São Paulo", country: "Brazil", temp: 25, icon: "brazil", summary: "Hot")
-        let madrid = City(name: "Madrid", country: "Spain", temp: 30, icon: "skorea", summary: "Rainy")
-        
-        let vanVC = CityViewController()
-        vanVC.city = vancouver
-        vanVC.view.backgroundColor = .red
-        
-        let tokVC = CityViewController()
-        tokVC.city = tokyo
-        tokVC.view.backgroundColor = .orange
-        
-        let saoVC = CityViewController()
-        saoVC.city = sao
-        saoVC.view.backgroundColor = .blue
-        
-        let madVC = CityViewController()
-        madVC.city = madrid
-        madVC.view.backgroundColor = .yellow
-        
-        let tabVC = UITabBarController()
-        window?.rootViewController = tabVC
-        
-        let citiesVC = [vanVC, tokVC, saoVC, madVC]
-        
-        tabVC.viewControllers = citiesVC.map { UINavigationController(rootViewController: $0) }
-        
-        window?.makeKeyAndVisible()
+        // Override point for customization after application launch.
         return true
     }
 

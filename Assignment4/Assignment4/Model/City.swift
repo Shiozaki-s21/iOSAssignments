@@ -13,4 +13,6 @@ struct City {
     let country: String
     let temp: Double
     let icon: String
+    let summary: String
 }
+
