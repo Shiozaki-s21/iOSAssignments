@@ -6,4 +6,13 @@
 //  Copyright © 2019 Kazuya Takahashi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import ScrollableGraphView
+
+extension Plot {
+    public convenience init() {}
+    
+    public func  MySetPlotPointPositions(forNewlyActivatedPoints newPoints: CountableRange<Int>, withData data: [Double]) {
+        
+    }
+}

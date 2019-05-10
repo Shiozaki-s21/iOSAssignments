@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Assignment9' do
+pod 'ScrollableGraphView'
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Assignment9
+
+  target 'Assignment9Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Assignment9UITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

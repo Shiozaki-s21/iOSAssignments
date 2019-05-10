@@ -6,4 +6,18 @@
 //  Copyright © 2019 Kazuya Takahashi. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import ScrollableGraphView
+
+
+class MyScrollView:ScrollableGraphView {
+    
+
+    
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+}
